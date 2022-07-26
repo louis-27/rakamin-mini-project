@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 const ROUTES = [
   { name: "Home", url: "/" },
   { name: "About", url: "/about" },
+  { name: "Product", url: "/product" },
 ];
 
 export function Menu({ toggle }) {

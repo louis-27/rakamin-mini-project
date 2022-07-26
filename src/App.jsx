@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Home, About } from "./pages";
+import { HomePage, AboutPage, ProductPage } from "./pages";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 
@@ -9,8 +9,9 @@ export function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="about" element={<AboutPage />} />
+        <Route path="product/:id" element={<ProductPage />} />
       </Routes>
 
       <Footer />
