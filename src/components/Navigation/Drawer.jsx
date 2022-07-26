@@ -14,7 +14,7 @@ export function Drawer({ styles, toggle }) {
       >
         <XIcon className="h-5 w-5" />
       </button>
-      <Menu />
+      <Menu toggle={toggle} />
     </animated.div>
   );
 }

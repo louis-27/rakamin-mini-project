@@ -1,3 +1,5 @@
+import { Route, Routes } from "react-router-dom";
+import { Home, About } from "./pages";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 
@@ -6,9 +8,10 @@ export function App() {
     <>
       <Header />
 
-      <div className="p-5">
-        <div className="font-bold text-3xl">Hi 👋, I'm Louis</div>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Routes>
 
       <Footer />
     </>
